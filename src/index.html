@@ -1,13 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Bakerlab</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <script
+      type="text/javascript"
+      src="scripts/main.js"
+      defer
+    ></script>
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+  <body class="body page__body">
+    <header class="header">
+      <div class="header__container">
+        <div class="top-bar header__top-bar">
+          <a href="#" class="top-bar__logo-link">
+            <img src="images/logo/logo.svg" alt="Logo">
+          </a>
+
+          <nav class="nav header__nav">
+            <ul class="nav__list header__nav-list">
+              <li class="nav__item">
+                <a href="#" class="nav__link header__nav-link">Products</a>
+              </li>
+            </ul>
+
+            <ul class="nav__list header__nav-list">
+              <li class="nav__item">
+                <a href="#" class="nav__link header__nav-link">About Us</a>
+              </li>
+            </ul>
+
+            <ul class="nav__list header__nav-list">
+              <li class="nav__item">
+                <a href="#" class="nav__link header__nav-link">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="#menu" class="icon icon--menu"></a>
+
+          <a href="#" class="icon icon--phone header__top-bar-phone"></a>
+        </div>
+      </div>
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="menu__container">
+        <div class="top-bar menu__top-bar">
+          <a href="#" class="top-bar__logo-link">
+            <img src="images/logo/logo.svg" alt="Logo">
+          </a>
+
+          <a href="#" class="icon icon--close"></a>
+        </div>
+
+        <nav class="nav menu__nav">
+          <ul class="nav__list menu__nav-list">
+            <li class="nav__item">
+              <a href="#" class="nav__link menu__nav-link">Products</a>
+            </li>
+          </ul>
+
+          <ul class="nav__list menu__nav-list">
+            <li class="nav__item">
+              <a href="#" class="nav__link menu__nav-link">About Us</a>
+            </li>
+          </ul>
+
+          <ul class="nav__list menu__nav-list">
+            <li class="nav__item">
+              <a href="#" class="nav__link menu__nav-link">Blog</a>
+            </li>
+          </ul>
+
+          <ul class="nav__list menu__nav-list">
+            <li class="nav__item menu__nav-item">
+              <a href="#" class="icon icon--phone menu__nav-link-phone"></a>
+
+              <a href="#" class="nav__link menu__nav-link menu__nav-link--contact-us">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main>
+      <section class="about-us">
+        <p class="about-us__fantasies">
+          We bake your fantasies — croissants, cakes, cookies, and cupcakes.
+        </p>
+
+        <h1 class="title-section title-section__primary about-us__title">
+          Creative bakery
+        </h1>
+
+        <img
+          class="about-us__img"
+          src="images/about-us/cookie.png"
+          alt="Coocie"
+        >
+
+        <a href="#" class="about-us__button">
+          <img
+            class="about-us__linl-cookie"
+            src="images/icons/icon-cookie.svg"
+            alt="cookie"
+          >
+          Learn more
+        </a>
+      </section>
+
+      <section class="what-we-bake">
+        <div class="what-we-bake__title-wrapper">
+          <h2 class="title-section title-section__secondary what-we-bake__title">
+            What we bake
+          </h2>
+          <p class="what-we-bake__proffer">
+            We can customize our cookies right for your needs. Just imagine it
+          </p>
+        </div>
+
+        <article class="what-we-bake__product-card what-we-bake__product-card--1">
+          <img
+            class="what-we-bake__img"
+            src="images/what-we-bake/photo-1.png"
+            alt="cake"
+          >
+
+          <span class="what-we-bake__cakes">Cakes</span>
+
+          <span class="what-we-bake__descr-cake">
+            Oatmeal cookies with golden raisins, orange zest and chocolate chips
+          </span>
+
+          <a href="#" class="what-we-bake__order-link">
+            <img
+              class="icon what-we-bake__order-link-arrow"
+              src="images/icons/icon-arrow.svg"
+              alt="arrow-right"
+            >
+            Order
+          </a>
+        </article>
+
+        <article class="what-we-bake__product-card what-we-bake__product-card--2">
+          <img
+            class="what-we-bake__img"
+            src="images/what-we-bake/photo-2.png"
+            alt="cake"
+          >
+
+          <span class="what-we-bake__cakes">Cakes</span>
+
+          <span class="what-we-bake__descr-cake">
+            Chocolate biscuit coffee cake topped with a buttercream and powder
+          </span>
+
+          <a href="#" class="what-we-bake__order-link">
+            <img
+              class="icon what-we-bake__order-link-arrow"
+              src="images/icons/icon-arrow.svg"
+              alt="arrow-right"
+            >
+            Order
+          </a>
+        </article>
+
+        <article class="what-we-bake__product-card what-we-bake__product-card--3">
+          <img
+            class="what-we-bake__img"
+            src="images/what-we-bake/photo-3.png"
+            alt="cake"
+          >
+
+          <span class="what-we-bake__cakes">Cakes</span>
+
+          <span class="what-we-bake__descr-cake">
+            Light multi-layered croissant strewn with cinammon and almond “petals”
+          </span>
+
+          <a href="#" class="what-we-bake__order-link">
+            <img
+              class="icon what-we-bake__order-link-arrow"
+              src="images/icons/icon-arrow.svg"
+              alt="arrow-right"
+            >
+            Order
+          </a>
+        </article>
+
+        <article class="what-we-bake__product-card what-we-bake__product-card--4">
+          <img
+            class="what-we-bake__img"
+            src="images/what-we-bake/photo-4.png"
+            alt="cake"
+          >
+
+          <span class="what-we-bake__cakes">Cakes</span>
+
+          <span class="what-we-bake__descr-cake">
+            Light multi-layered croissant strewn with coconut and nuts
+          </span>
+
+          <a href="#" class="what-we-bake__order-link">
+            <img
+              class="icon what-we-bake__order-link-arrow"
+              src="images/icons/icon-arrow.svg"
+              alt="arrow-right"
+            >
+            Order
+          </a>
+        </article>
+
+        <article class="what-we-bake__product-card what-we-bake__product-card--5">
+          <img
+            class="what-we-bake__img"
+            src="images/what-we-bake/photo-5.png"
+            alt="cake"
+          >
+
+          <span class="what-we-bake__cakes">Cakes</span>
+
+          <span class="what-we-bake__descr-cake">
+            Chocolate salted caramel, Vanilla frutti pebbles
+          </span>
+
+          <a href="#" class="what-we-bake__order-link">
+            <img
+              class="icon what-we-bake__order-link-arrow"
+              src="images/icons/icon-arrow.svg"
+              alt="arrow-right"
+            >
+            Order
+          </a>
+        </article>
+
+        <article class="what-we-bake__product-card what-we-bake__product-card--6">
+          <img
+            class="what-we-bake__img"
+            src="images/what-we-bake/photo-6.png"
+            alt="cake"
+          >
+
+          <span class="what-we-bake__cakes">Cakes</span>
+
+          <span class="what-we-bake__descr-cake">
+            Oatmeal cookies with golden raisins, orange zest and chocolate chips
+          </span>
+
+          <a href="#" class="what-we-bake__order-link">
+            <img
+              class="icon what-we-bake__order-link-arrow"
+              src="images/icons/icon-arrow.svg"
+              alt="arrow-right"
+            >
+            Order
+          </a>
+        </article>
+
+      </section>
+    </main>
   </body>
 </html>

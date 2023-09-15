@@ -1,0 +1,35 @@
+.title-section {
+  line-height: 85%;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &__primary {
+    font-size: 64px;
+    letter-spacing: -3.2px;
+
+    @include onTablet {
+      font-size: 80px;
+      letter-spacing: -4px;
+    }
+
+    @include onSmallDescktop {
+      font-size: 136px;
+      letter-spacing: -6.8px;
+    }
+  }
+
+  &__secondary {
+    font-size: 48px;
+    letter-spacing: -2.4px;
+
+    @include onTablet {
+      font-size: 56px;
+      letter-spacing: -2.8px;
+    }
+
+    @include onSmallDescktop {
+      font-size: 72px;
+      letter-spacing: -3.6px;
+    }
+  }
+}

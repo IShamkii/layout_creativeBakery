@@ -1,7 +1,11 @@
 @import "utils";
-@import "fonts";
-@import "typography";
+@import "blocks/reset";
 
-body {
-  background: $c-gray;
-}
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/top-bar";
+@import "blocks/side-bar";
+@import "blocks/about-us";
+@import "blocks/what-we-bake";
+@import "blocks/icon";
+@import "blocks/title-section";

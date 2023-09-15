@@ -1,0 +1,40 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: inherit;
+
+  &__container {
+    height: $header-height;
+    padding-block: 16px;
+
+    display: grid;
+    row-gap: 132px;
+
+    @include contentPaddingInLineForDevices;
+  }
+
+  &__nav {
+    display: grid;
+    row-gap: 24px;
+
+    text-align: center;
+  }
+
+  &__nav-item {
+    padding-block: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__nav-link--contact-us {
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    color: #f9512e;
+  }
+}

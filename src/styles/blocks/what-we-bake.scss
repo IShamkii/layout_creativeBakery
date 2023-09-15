@@ -1,0 +1,96 @@
+.what-we-bake {
+  @include contentPaddingInLineForDevices;
+  @include pageGrid;
+
+  row-gap: 56px;
+
+  @include onTablet {
+    row-gap: 80px;
+  }
+
+  &__title-wrapper {
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: 1 / -1;
+    }
+
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    color: $title-color;
+  }
+
+  &__product-card {
+    grid-column: span 2;
+
+    @include onTablet {
+      grid-column: span 4;
+    }
+
+    &--1,
+    &--5 {
+      @include onSmallDescktop {
+        grid-column: 1 / 4;
+      }
+    }
+
+    &--2,
+    &--6 {
+      @include onSmallDescktop {
+        grid-column: 4 / 7;
+      }
+    }
+
+    &--3 {
+      @include onSmallDescktop {
+        grid-column: 3 / 6;
+      }
+    }
+
+    &--4 {
+      @include onSmallDescktop {
+        grid-column: 6 / -1;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 16px;
+
+    border-radius: 8px;
+  }
+
+  &__cakes {
+    margin-bottom: 8px;
+
+    display: block;
+
+    text-transform: uppercase;
+    color: #7f8096;
+  }
+
+  &__descr-cake {
+    margin-bottom: 16px;
+
+    display: block;
+  }
+
+  &__order-link {
+    height: 32px;
+    width: fit-content;
+
+    display: flex;
+    gap: 4px;
+    align-items: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+    color: $title-color;
+    text-transform: uppercase;
+  }
+}

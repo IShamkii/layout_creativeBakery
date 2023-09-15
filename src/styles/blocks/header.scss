@@ -1,0 +1,35 @@
+.header {
+  height: $header-height;
+
+  @include onSmallDescktop {
+    height: 88px;
+  }
+
+  &__container {
+    padding-block: 16px;
+
+    @include onSmallDescktop {
+      padding-block: 28px;
+    }
+  }
+
+  &__top-bar {
+    @include contentPaddingInLineForDevices;
+  }
+
+  &__top-bar-phone {
+    display: none;
+  }
+
+  &__nav {
+    display: none;
+
+    @include onSmallDescktop {
+      display: flex;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+}
