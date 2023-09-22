@@ -8,7 +8,9 @@
   color: $main-text-color;
 
   &__body {
-    margin: 0;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1440px;
 
     font-family: "Inter", sans-serif;
     background-color: #ffeefc;
@@ -36,5 +38,10 @@
       transform: translateX(0);
       pointer-events: all;
     }
+  }
+
+  &__main {
+    display: grid;
+    row-gap: 72px;
   }
 }

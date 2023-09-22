@@ -16,6 +16,11 @@
       font-size: 136px;
       letter-spacing: -6.8px;
     }
+
+    @include onDescktop {
+      font-size: 144px;
+      letter-spacing: -7.2px;
+    }
   }
 
   &__secondary {
